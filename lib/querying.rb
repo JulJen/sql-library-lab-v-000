@@ -12,9 +12,8 @@ def select_name_and_motto_of_char_with_longest_motto
 end
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT COUNT(characters.species) as prolific_species
-  FROM characters
-  ORDER BY(prolific_species) DESC LIMIT 1";
+  "SELECT character.id as value, COUNT(characters.species) as count
+  FROM characters";
 end
 
 def select_name_and_series_subgenres_of_authors
