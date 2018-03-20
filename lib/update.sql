@@ -1,5 +1,5 @@
 UPDATE characters
 SET
-species = 'Martian'
+  species = 'Martian'
 WHERE
-id = 8; 
+  id = 8;
