@@ -30,7 +30,7 @@ def select_series_title_with_most_human_characters
   FROM series
   INNER JOIN characters
   ON series.id = characters.series_id
-  GROUP BY species
+  GROUP BY characters.species
   HAVING 'select_value_and_count_of_most_prolific_species'";
 end
 
