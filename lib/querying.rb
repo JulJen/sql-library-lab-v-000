@@ -34,7 +34,7 @@ def select_series_title_with_most_human_characters
 end
 
 def select_character_names_and_number_of_books_they_are_in
-  "SELECT characters.name as name, SUM(characters.name) as number
+  "SELECT characters.name as name, COUNT(characters.name) as number
   FROM characters
   INNER JOIN authors
   ON characters.author_id = authors.id
