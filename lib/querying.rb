@@ -38,5 +38,5 @@ def select_character_names_and_number_of_books_they_are_in
   FROM characters
   INNER JOIN books
   ON characters.series_id = books.series_id
-  ORDER BY name DESC";
+  ORDER BY name ASC";
 end
