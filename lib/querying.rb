@@ -12,7 +12,7 @@ def select_name_and_motto_of_char_with_longest_motto
 end
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT characters.species as species
+  "SELECT characters.species as species, COUNT(species) as count
   FROM characters
   ORDER BY(count) DESC LIMIT 1";
 end
