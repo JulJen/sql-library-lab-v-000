@@ -37,6 +37,5 @@ def select_character_names_and_number_of_books_they_are_in
   "SELECT characters.name as name, COUNT(books.series_id)
   FROM characters
   INNER JOIN books
-  ON characters.id = books.id
-  ORDER BY characters.id DESC";
+  ON characters.id = books.id";
 end
