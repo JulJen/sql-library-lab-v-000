@@ -12,7 +12,9 @@ def select_name_and_motto_of_char_with_longest_motto
 end
 
 def select_value_and_count_of_most_prolific_species
-  "Write your SQL query here"
+  "SELECT COUNT(characters.species) as species
+  FROM characters
+  ORDER BY(name) DESC LIMIT 1";
 end
 
 def select_name_and_series_subgenres_of_authors
