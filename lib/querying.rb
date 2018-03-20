@@ -38,5 +38,6 @@ def select_character_names_and_number_of_books_they_are_in
   FROM characters
   INNER JOIN books
   ON characters.series_id = books.series_id
+  GROUP BY name
   ORDER BY characters.id DESC";
 end
