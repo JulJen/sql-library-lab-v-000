@@ -37,5 +37,5 @@ def select_character_names_and_number_of_books_they_are_in
   "SELECT characters.name as name, books.series_id
   FROM characters
   INNER JOIN books
-  ON characters.id = books.id";
+  ON characters.series_id = books.series_id";
 end
