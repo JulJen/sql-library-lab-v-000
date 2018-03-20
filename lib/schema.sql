@@ -24,28 +24,23 @@ CREATE TABLE characters (
 CREATE TABLE books (
   id INTEGER PRIMARY KEY,
   title TEXT,
-  category TEXT,
-  funding_goal INTEGER,
-  start_date INTEGER,
-  end_date INTEGER
+  year INTEGER,
+  series_id  INTEGER
 );
 
 CREATE TABLE series (
   id INTEGER PRIMARY KEY,
   title TEXT,
-  author_id TEXT,
-  subgenre_id TEXT,
-);
-
-
-CREATE TABLE authors (
-  id INTEGER PRIMARY KEY,
-  amount INTEGER,
-  user_id INTEGER,
-  project_id INTEGER
+  author_id INTEGER,
+  subgenre_id INTEGER
 );
 
 CREATE TABLE sub_genres (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+);
+
+CREATE TABLE authors (
   id INTEGER PRIMARY KEY,
   name TEXT,
 );
